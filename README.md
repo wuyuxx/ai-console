@@ -5,6 +5,7 @@
 [![中文文档](https://img.shields.io/badge/文档-中文-blue)](README_zh.md)
 
 Console and Terminal Command AI Assistant | A command-line tool designed for developers. Get terminal command help, debugging suggestions and technical support.
+Certainly: General Q&A support for non-technical questions
 
 ## Features
 

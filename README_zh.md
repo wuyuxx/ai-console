@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/wuyuxx/ai-console)
 
 控制台和终端命令AI助手 | 为开发者设计的命令行工具。获取终端命令帮助、调试建议和技术支持。
+当然：支持与技术无关的日常问答
 
 ## 功能
 
