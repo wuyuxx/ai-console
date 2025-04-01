@@ -1,10 +1,14 @@
 {
   "name": "ai-console",
-  "version": "1.0.0",
-  "description": "Ask AI on the console | terminal",
+  "version": "1.0.1",
+  "description": "Console and Terminal Command AI Assistant",
   "keywords": [
     "ai",
-    "console"
+    "console",
+    "terminal",
+    "command",
+    "assistant",
+    "tool"
   ],
   "type": "module",
   "bin": {
