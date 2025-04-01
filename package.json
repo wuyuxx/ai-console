@@ -1,0 +1,20 @@
+{
+  "name": "ai-console",
+  "version": "1.0.0",
+  "description": "Ask AI on the console | terminal",
+  "keywords": [
+    "ai",
+    "console"
+  ],
+  "type": "module",
+  "bin": {
+    "ai": "./bin/index.js"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "inquirer": "^12.5.0"
+  },
+  "license": "MIT",
+  "author": "Wuyu <wuyu986@qq.com>",
+  "homepage": "https://github.com/wuyuxx/ai-console"
+}

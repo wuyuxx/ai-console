@@ -1,0 +1,40 @@
+# Dependency directories
+node_modules/
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# Debug logs
+npm-debug.log*
+
+# Local development
+*.local
+
+# Test coverage
+coverage/
+
+# Package manager specific
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Editor directories and files
+*.swp
+*.swo
+*~
