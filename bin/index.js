@@ -1,14 +1,17 @@
 #!/usr/bin/env node
+import { createRequire } from 'module';
 import { program } from 'commander';
 import config from '../src/config.js';
 import ai from '../src/ai.js';
 import i18n from '../src/i18n.js';
-import packageJson from '../package.json' with { type: 'json' };
+
+const require = createRequire(import.meta.url);
+const pkg = require('../package.json');
 
 program
     .name('ai')
     .description(i18n.t('usage'))
-    .version(packageJson.version);
+    .version(pkg.version);
 
 program
     .command('config')

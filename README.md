@@ -1,10 +1,11 @@
 # AI Console
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/wuyuxx/ai-console)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/wuyuxx/ai-console)
 [![中文文档](https://img.shields.io/badge/文档-中文-blue)](README_zh.md)
 
 Console and Terminal Command AI Assistant | A command-line tool designed for developers. Get terminal command help, debugging suggestions and technical support.
+
 Certainly: General Q&A support for non-technical questions
 
 ## Features
