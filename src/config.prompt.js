@@ -40,5 +40,14 @@ export default [
             }
             return true;
         }
+    },
+    {
+        type: 'list',
+        name: 'language',
+        message: i18n.t('chooseLanguage'),
+        choices: [
+            { name: '中文', value: 'Chinese' },
+            { name: 'English', value: 'English' }
+        ]
     }
 ]

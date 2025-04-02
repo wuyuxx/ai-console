@@ -17,8 +17,9 @@ async function config() {
     const baseUrl = answers.baseUrl || answers.provider;
     const apiKey = answers.apiKey;
     const model = answers.model;
+    const language = answers.language;
 
-    const configContent = await setupConfig(baseUrl, apiKey, model);
+    const configContent = await setupConfig(baseUrl, apiKey, model, language);
 
     console.log(i18n.t('configSuccess'));
     console.log(configContent);
@@ -31,9 +32,10 @@ async function config() {
  * @param {string} baseUrl - API base URL
  * @param {string} apiKey - API key
  * @param {string} model - Model name
+ * @param {string} language - Model Main Language
  * @returns {Promise<string>} Configuration file content
  */
-async function setupConfig(baseUrl, apiKey, model) {
+async function setupConfig(baseUrl, apiKey, model, language) {
     const homeDir = os.homedir();
     const configDir = path.join(homeDir, '.ai-console');
 
@@ -43,7 +45,8 @@ async function setupConfig(baseUrl, apiKey, model) {
     const configContent = JSON.stringify({
         baseUrl,
         apiKey,
-        model
+        model,
+        language
     }, null, 2);
 
     await fs.writeFile(configPath, configContent, 'utf8');

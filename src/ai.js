@@ -16,8 +16,8 @@ export default async function(question, context) {
     } catch (err) {
         throw new Error(i18n.t('configError'));
     }
-    const { baseUrl, apiKey, model } = config;
-    if (!baseUrl || !model) {
+    const { baseUrl, apiKey, model, language } = config;
+    if (!baseUrl || !model || !language) {
         throw new Error(i18n.t('configError'));
     }
 
@@ -35,7 +35,11 @@ export default async function(question, context) {
             messages: [
                 {
                     role: 'system',
-                    content: `You are a technical expert proficient in ${context.platform} platform terminal commands. Now the user is using terminal commands and you just need to provide a simple and accurate response to solve the user's current problem.` 
+                    content: `
+                    You are a technical expert proficient in ${context.platform} platform terminal commands.
+                    Now the user is using terminal commands and you just need to provide a simple and accurate response to solve the user's current problem.
+                    Important: Always answer questions in ${language} (unless the user explicitly specifies using another language).
+                    `
                 },
                 {
                     role: 'user',

@@ -10,6 +10,7 @@ const messages = {
 		inputBaseUrl: '输入基础URL (例如 https://api.openai.com) >>',
 		inputApiKey: '输入API密钥 >>',
 		inputModel: '输入模型名称 >>',
+		chooseLanguage: '选择AI主语言',
 		pleaseInputBaseUrl: '请输入基础URL！',
 		pleaseInputApiKey: '请输入API密钥！',
 		pleaseInputModel: '请输入模型名称！'
@@ -25,6 +26,7 @@ const messages = {
 		inputBaseUrl: 'Input baseUrl (e.g. https://api.openai.com) >>',
 		inputApiKey: 'Input API Key >>',
 		inputModel: 'Input Model >>',
+		chooseLanguage: 'Choose AI Main Language',
 		pleaseInputBaseUrl: 'Please input baseUrl!',
 		pleaseInputApiKey: 'Please input API Key!',
 		pleaseInputModel: 'Please input Model!'
